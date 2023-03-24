@@ -1,1 +1,18 @@
-TASK 1 - CALCULATION OF A RECTANGLE AREA Pher sh vcalchale ta "a thro filleves lanailes of object oriented programming Hints: - we need to create two classes, one RectangleArea for logic of our program and the Main class for using our logic. - in the Main class we create the RectangleArea object and call three methods on it. The methods we should create: a) getData0, gets side lengths from the user. b) computeField0, performs computation. c) fieldDisplav0, displavs info and result
+import java.util.Scanner;
+
+public class RectangleArea {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Please enter the length of the rectangle: ");
+        double length = input.nextDouble();
+
+        System.out.print("Please enter the width of the rectangle: ");
+        double width = input.nextDouble();
+
+        double area = length * width;
+
+        System.out.println("The area of the rectangle is " + area);
+    }
+}
+
